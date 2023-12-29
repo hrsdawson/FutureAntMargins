@@ -353,7 +353,7 @@ if __name__ == '__main__':
 	if not os.path.lexists(save_dir):
 		os.mkdir(save_dir)	
 	ds_vol_trans_across_contour = xr.Dataset({'vol_trans_across_contour_binned': vol_trans_across_contour_binned, 'ndays': days_in_month})
-	ds_vol_trans_across_contour.to_netcdf(save_dir+'vol_trans_across_contour_'+year+'_'+month+'.nc')
+	ds_vol_trans_across_contour.to_netcdf(save_dir+'vol_trans_across_contour_'+year+'_'+month+'_sigma1.nc')
 
 
 
