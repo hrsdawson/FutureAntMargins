@@ -62,8 +62,8 @@ if __name__ == '__main__':
 	# ### Open grid cell width data for domain
 
 	## some grid data is required, a little complicated because these variables don't behave well with some 
-	dyt = cc.querying.getvar(expt, 'dyt',session, n=1)
-	dxu = cc.querying.getvar(expt, 'dxu',session, n=1)
+	dyt = cc.querying.getvar(expt, 'dyt',session, n=-1)
+	dxu = cc.querying.getvar(expt, 'dxu',session, n=-1)
 
 	# select latitude range:
 	dxu = dxu.sel(yu_ocean=lat_range)
