@@ -36,9 +36,9 @@ if __name__ == '__main__':
 	#client = Client(local_directory=dask_dir)
 
 	#print('Client started')
-	session = cc.database.create_session('/g/data/ik11/databases/cosima_master.db')
+	session = cc.database.create_session('/g/data/e14/hd4873/access-om2-01/project03_misc_data/databases/Han_V2.db')
 
-	expt = '01deg_jra55v13_ryf9091_ssp245'
+	expt = '01deg_jra55v13_ssp585_windthermalmw'
 	
 	###############################
 	#### get run count argument that was passed to python script ####
@@ -320,8 +320,8 @@ if __name__ == '__main__':
 	# ### Bin into density:
 	print('Binning')
 	## define isopycnal bins   
-	#isopycnal_bins_sigma1 = np.append(np.append(np.append(1,np.arange(27,32,.1)),np.arange(32,32.8,.01)),40)
-	isopycnal_bins_sigma1 = np.append(np.append(1,np.arange(32.0,32.8,.01)),40)
+	isopycnal_bins_sigma1 = np.append(np.append(np.append(1,np.arange(27,32,.1)),np.arange(32,32.8,.01)),40)
+	#isopycnal_bins_sigma1 = np.append(np.append(1,np.arange(32.0,32.8,.01)),40)
 
 	## intialise empty transport along contour in density bins array
 	vol_trans_across_contour_binned = xr.DataArray(np.zeros((len(isopycnal_bins_sigma1),len(contour_ordering))), 
