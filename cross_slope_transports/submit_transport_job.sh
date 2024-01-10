@@ -23,6 +23,7 @@ cd $script_dir
 #output_dir=/g/data/v45/akm157/model_data/access-om2/01deg_jra55v140_iaf_cycle3/vhrho_binned/
 
 # load conda
+module unload conda/anlaysis3
 module use /g/data3/hh5/public/modules
 module load conda/analysis3-22.01
 #module load conda/analysis3
